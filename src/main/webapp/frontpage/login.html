@@ -8,29 +8,48 @@
 <meta name="keywords" content="">
 <link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> 
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <style>
+        #bodyset{
+            /* background: url("http://img.zcool.cn/community/01504759302776a8012193a30f85f1.jpg@1280w_1l_2o_100sh.jpg") no-repeat;
+            background:url("pictures/bg1.jpg") no-repeat ;*/
+            background-size: 100%;
+
+        }
+    </style>
+
 </head>
-<div class="dropdown">
-    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">主题
-        <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-        <li role="presentation">
-            <a role="menuitem" tabindex="-1" href="#">Java</a>
-        </li>
-        <li role="presentation">
-            <a role="menuitem" tabindex="-1" href="#">数据挖掘</a>
-        </li>
-        <li role="presentation">
-            <a role="menuitem" tabindex="-1" href="#">数据通信/网络</a>
-        </li>
-        <li role="presentation" class="divider"></li>
-        <li role="presentation">
-            <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
-        </li>
-    </ul>
-</div>
-<body>
-    
+<body id="bodyset">
+ <p align="center">个人商场登陆页面</p><br><br>
+ <div class="container" id="logincontainer">
+ <form role="form">
+     <div class="form-group">
+         <span class="glyphicon glyphicon-user" aria-hidden="true" ></span>
+         <label for="name">username</label>
+         <div class="col-md-10" >
+             <input type="text" class="form-control" id="name" size="10" placeholder="input your name">
+         </div>
+     </div> 
+     <div class="form-group">
+         <span class="glyphicon glyphicon-tree-conifer" aria-hidden="true" ></span>
+          <label for="password">password</label>
+          <div class="col-md-10">
+             <input type="text" class="form-control" id="password" size="10" placeholder="input your password">
+         </div>
+     </div> 
+     <div class="form-group">
+             <div class="col-md-0.2">
+                 <span class="glyphicon glyphicon-hand-right" aria-hidden="true" id="handlelabel"></span>
+             </div>
+             <div class="col-md-5" id="message">
+                 <button type="button" class="btn btn-success">login</button>
+                 <button type="button" class="btn btn-warning">
+                     <span class="glyphicon glyphicon-phone-alt" aria-hidden="true" ></span>  18720087532
+                 </button>
+             </div>
+     </div> 
+ </form>
+ </div>
+
 </body>
 </html>
